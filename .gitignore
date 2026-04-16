@@ -4,7 +4,8 @@
 
 # Bloquear chaves de segurança e credenciais do IAM
 *.json
-
+# Arquivos de configuração local
+*.properties
 # Pastas geradas pelo Java/Maven/IDE
 target/
 .idea/
