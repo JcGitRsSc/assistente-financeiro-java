@@ -1,7 +1,8 @@
-import com.google.api.services.sheets.v4.Sheets;
 import java.io.FileInputStream;
 import java.util.List;
 import java.util.Properties;
+
+import com.google.api.services.sheets.v4.Sheets;
 
 public class Main {
     public static void main(String[] args) {
@@ -23,7 +24,7 @@ public class Main {
             }
 
             // 3. Define os dados de teste
-            List<Object> teste = List.of("16/04/2026", "Teste de Conexão Seguro", "100.00", "Segurança");
+           List<Object> teste = List.of("16/04/2026", "Teste de Conexão Seguro", "Segurança", "100,00");
 
             // 4. Envia para a aba 'Cartão 1'
             sheetsService.adicionarLinha(idDaPlanilha, "'Cartão 1'!A1", teste);

@@ -1,8 +1,9 @@
-import com.google.api.services.sheets.v4.Sheets;
-import com.google.api.services.sheets.v4.model.ValueRange;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
+
+import com.google.api.services.sheets.v4.Sheets;
+import com.google.api.services.sheets.v4.model.ValueRange;
 
 public class GoogleSheetsService {
     private final Sheets service;
